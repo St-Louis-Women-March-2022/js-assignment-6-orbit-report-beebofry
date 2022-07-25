@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Satellite } from './satellite';
 
 @Component({
@@ -31,6 +31,7 @@ export class AppComponent {
 
 				 // make a copy of the sourceList to be shown to the user
 				 this.displayList = this.sourceList.slice(0);
+				 console.log(this.displayList)
 	  
 			}.bind(this));
 		}.bind(this));
